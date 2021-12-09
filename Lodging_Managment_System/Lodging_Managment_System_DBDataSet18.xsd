@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Lodging_Managment_System_DBDataSet18" targetNamespace="http://tempuri.org/Lodging_Managment_System_DBDataSet18.xsd" xmlns:mstns="http://tempuri.org/Lodging_Managment_System_DBDataSet18.xsd" xmlns="http://tempuri.org/Lodging_Managment_System_DBDataSet18.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Lodging_Managment_System_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Lodging_Managment_System_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lodging_Managment_System.Properties.Settings.GlobalReference.Default.Lodging_Managment_System_DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Deleted_EmpTableAdapter" GeneratorDataComponentClassName="Deleted_EmpTableAdapter" Name="Deleted_Emp" UserDataComponentName="Deleted_EmpTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Lodging_Managment_System_DBConnectionString (Settings)" DbObjectName="Lodging_Managment_System_DB.dbo.Deleted_Emp" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Emp_ID, Emp_Name, Mob_No, DOB, Gender, Aadhar_No, PAN_No, Designation, Salary, Hire_Date, Email_Id, Shift_Time FROM dbo.Deleted_Emp</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Emp_ID" DataSetColumn="Emp_ID" />
+              <Mapping SourceColumn="Emp_Name" DataSetColumn="Emp_Name" />
+              <Mapping SourceColumn="Mob_No" DataSetColumn="Mob_No" />
+              <Mapping SourceColumn="DOB" DataSetColumn="DOB" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="Aadhar_No" DataSetColumn="Aadhar_No" />
+              <Mapping SourceColumn="PAN_No" DataSetColumn="PAN_No" />
+              <Mapping SourceColumn="Designation" DataSetColumn="Designation" />
+              <Mapping SourceColumn="Salary" DataSetColumn="Salary" />
+              <Mapping SourceColumn="Hire_Date" DataSetColumn="Hire_Date" />
+              <Mapping SourceColumn="Email_Id" DataSetColumn="Email_Id" />
+              <Mapping SourceColumn="Shift_Time" DataSetColumn="Shift_Time" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Lodging_Managment_System_DBDataSet18" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Lodging_Managment_System_DBDataSet18" msprop:Generator_UserDSName="Lodging_Managment_System_DBDataSet18">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Deleted_Emp" msprop:Generator_TableClassName="Deleted_EmpDataTable" msprop:Generator_TableVarName="tableDeleted_Emp" msprop:Generator_TablePropName="Deleted_Emp" msprop:Generator_RowDeletingName="Deleted_EmpRowDeleting" msprop:Generator_RowChangingName="Deleted_EmpRowChanging" msprop:Generator_RowEvHandlerName="Deleted_EmpRowChangeEventHandler" msprop:Generator_RowDeletedName="Deleted_EmpRowDeleted" msprop:Generator_UserTableName="Deleted_Emp" msprop:Generator_RowChangedName="Deleted_EmpRowChanged" msprop:Generator_RowEvArgName="Deleted_EmpRowChangeEvent" msprop:Generator_RowClassName="Deleted_EmpRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_ID" msprop:Generator_ColumnVarNameInTable="columnEmp_ID" msprop:Generator_ColumnPropNameInRow="Emp_ID" msprop:Generator_ColumnPropNameInTable="Emp_IDColumn" msprop:Generator_UserColumnName="Emp_ID" type="xs:int" />
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mob_No" msprop:Generator_ColumnVarNameInTable="columnMob_No" msprop:Generator_ColumnPropNameInRow="Mob_No" msprop:Generator_ColumnPropNameInTable="Mob_NoColumn" msprop:Generator_UserColumnName="Mob_No" type="xs:decimal" />
+              <xs:element name="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" msprop:Generator_UserColumnName="DOB" type="xs:dateTime" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aadhar_No" msprop:Generator_ColumnVarNameInTable="columnAadhar_No" msprop:Generator_ColumnPropNameInRow="Aadhar_No" msprop:Generator_ColumnPropNameInTable="Aadhar_NoColumn" msprop:Generator_UserColumnName="Aadhar_No" type="xs:long" />
+              <xs:element name="PAN_No" msprop:Generator_ColumnVarNameInTable="columnPAN_No" msprop:Generator_ColumnPropNameInRow="PAN_No" msprop:Generator_ColumnPropNameInTable="PAN_NoColumn" msprop:Generator_UserColumnName="PAN_No">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Salary" msprop:Generator_ColumnVarNameInTable="columnSalary" msprop:Generator_ColumnPropNameInRow="Salary" msprop:Generator_ColumnPropNameInTable="SalaryColumn" msprop:Generator_UserColumnName="Salary" type="xs:decimal" />
+              <xs:element name="Hire_Date" msprop:Generator_ColumnVarNameInTable="columnHire_Date" msprop:Generator_ColumnPropNameInRow="Hire_Date" msprop:Generator_ColumnPropNameInTable="Hire_DateColumn" msprop:Generator_UserColumnName="Hire_Date" type="xs:dateTime" />
+              <xs:element name="Email_Id" msprop:Generator_ColumnVarNameInTable="columnEmail_Id" msprop:Generator_ColumnPropNameInRow="Email_Id" msprop:Generator_ColumnPropNameInTable="Email_IdColumn" msprop:Generator_UserColumnName="Email_Id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shift_Time" msprop:Generator_ColumnVarNameInTable="columnShift_Time" msprop:Generator_ColumnPropNameInRow="Shift_Time" msprop:Generator_ColumnPropNameInTable="Shift_TimeColumn" msprop:Generator_UserColumnName="Shift_Time">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

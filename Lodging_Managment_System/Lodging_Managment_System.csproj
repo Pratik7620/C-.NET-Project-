@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BC58CB8-DDA6-445C-8139-3DAB044F0905}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lodging_Managment_System</RootNamespace>
+    <AssemblyName>Lodging_Managment_System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Employee.Designer.cs">
+      <DependentUpon>Add_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Room.Designer.cs">
+      <DependentUpon>Add_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking_Next.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking_Next.Designer.cs">
+      <DependentUpon>Booking_Next.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Out.Designer.cs">
+      <DependentUpon>Check_Out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Booking1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Booking1.Designer.cs">
+      <DependentUpon>frm_Booking1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gallary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gallary.Designer.cs">
+      <DependentUpon>Gallary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Login.cs" />
+    <Compile Include="Global_MAx.cs" />
+    <Compile Include="Global_Varible_For_Valuecs.cs" />
+    <Compile Include="Global_Var_Room_No.cs" />
+    <Compile Include="Lodging_Managment_System_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Managment_System_DBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Managment_System_DBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lodging_Practice_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lodging_Practice_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_LMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_LMS.Designer.cs">
+      <DependentUpon>MDI_LMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NorthWinEntities.cs" />
+    <Compile Include="Pay_Amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pay_Amount.Designer.cs">
+      <DependentUpon>Pay_Amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Update_Customer_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Customer_Details.Designer.cs">
+      <DependentUpon>Update_Customer_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Room_Booking_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Room_Booking_Details.Designer.cs">
+      <DependentUpon>Update_Room_Booking_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Remove_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Remove_Employee.Designer.cs">
+      <DependentUpon>View_Remove_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Customer.Designer.cs">
+      <DependentUpon>Search_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service.Designer.cs">
+      <DependentUpon>Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service_Next.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service_Next.Designer.cs">
+      <DependentUpon>Service_Next.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Employee_Details.Designer.cs">
+      <DependentUpon>Update_Employee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Rooms.Designer.cs">
+      <DependentUpon>Update_Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Service.Designer.cs">
+      <DependentUpon>Update_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Managment.Designer.cs">
+      <DependentUpon>User_Managment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_All_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_All_Customer.Designer.cs">
+      <DependentUpon>View_All_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_All_Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_All_Rooms.Designer.cs">
+      <DependentUpon>View_All_Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Employee_Details.Designer.cs">
+      <DependentUpon>View_Employee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelCome_Msg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelCome_Msg.Designer.cs">
+      <DependentUpon>WelCome_Msg.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Employee.resx">
+      <DependentUpon>Add_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Room.resx">
+      <DependentUpon>Add_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking_Next.resx">
+      <DependentUpon>Booking_Next.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Out.resx">
+      <DependentUpon>Check_Out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Booking1.resx">
+      <DependentUpon>frm_Booking1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gallary.resx">
+      <DependentUpon>Gallary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_LMS.resx">
+      <DependentUpon>MDI_LMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay_Amount.resx">
+      <DependentUpon>Pay_Amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Update_Customer_Details.resx">
+      <DependentUpon>Update_Customer_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Room_Booking_Details.resx">
+      <DependentUpon>Update_Room_Booking_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Remove_Employee.resx">
+      <DependentUpon>View_Remove_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Customer.resx">
+      <DependentUpon>Search_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service.resx">
+      <DependentUpon>Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service_Next.resx">
+      <DependentUpon>Service_Next.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Employee_Details.resx">
+      <DependentUpon>Update_Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Rooms.resx">
+      <DependentUpon>Update_Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Service.resx">
+      <DependentUpon>Update_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Managment.resx">
+      <DependentUpon>User_Managment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_All_Customer.resx">
+      <DependentUpon>View_All_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_All_Rooms.resx">
+      <DependentUpon>View_All_Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Employee_Details.resx">
+      <DependentUpon>View_Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelCome_Msg.resx">
+      <DependentUpon>WelCome_Msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Lodging_Managment_System_DBDataSet.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet1.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet1.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet10.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet10.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet11.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet11.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet12.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet12.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet13.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet13.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet14.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet14.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet15.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet15.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet16.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet16.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet17.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet17.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet18.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet18.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet19.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet19.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet2.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet2.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet20.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet20.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet21.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet21.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet22.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet22.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet3.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet3.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet4.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet4.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet5.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet5.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet6.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet6.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet7.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet7.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet8.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet8.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet9.xsc">
+      <DependentUpon>Lodging_Managment_System_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Managment_System_DBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Managment_System_DBDataSet9.xss">
+      <DependentUpon>Lodging_Managment_System_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Practice_DBDataSet.xsc">
+      <DependentUpon>Lodging_Practice_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Lodging_Practice_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Lodging_Practice_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lodging_Practice_DBDataSet.xss">
+      <DependentUpon>Lodging_Practice_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel back.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

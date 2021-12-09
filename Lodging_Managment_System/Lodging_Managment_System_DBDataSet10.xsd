@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Lodging_Managment_System_DBDataSet10" targetNamespace="http://tempuri.org/Lodging_Managment_System_DBDataSet10.xsd" xmlns:mstns="http://tempuri.org/Lodging_Managment_System_DBDataSet10.xsd" xmlns="http://tempuri.org/Lodging_Managment_System_DBDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Lodging_Managment_System_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Lodging_Managment_System_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lodging_Managment_System.Properties.Settings.GlobalReference.Default.Lodging_Managment_System_DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Cust_IDTableAdapter" GeneratorDataComponentClassName="Cust_IDTableAdapter" Name="Cust_ID" UserDataComponentName="Cust_IDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Lodging_Managment_System_DBConnectionString (Settings)" DbObjectName="Lodging_Managment_System_DB.dbo.Cust_ID" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Cust_ID FROM dbo.Cust_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cust_ID" DataSetColumn="Cust_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Lodging_Managment_System_DBDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Lodging_Managment_System_DBDataSet10" msprop:Generator_UserDSName="Lodging_Managment_System_DBDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cust_ID" msprop:Generator_TableClassName="Cust_IDDataTable" msprop:Generator_TableVarName="tableCust_ID" msprop:Generator_TablePropName="Cust_ID" msprop:Generator_RowDeletingName="Cust_IDRowDeleting" msprop:Generator_RowChangingName="Cust_IDRowChanging" msprop:Generator_RowEvHandlerName="Cust_IDRowChangeEventHandler" msprop:Generator_RowDeletedName="Cust_IDRowDeleted" msprop:Generator_UserTableName="Cust_ID" msprop:Generator_RowChangedName="Cust_IDRowChanged" msprop:Generator_RowEvArgName="Cust_IDRowChangeEvent" msprop:Generator_RowClassName="Cust_IDRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cust_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCust_ID" msprop:Generator_ColumnPropNameInRow="Cust_ID" msprop:Generator_ColumnPropNameInTable="Cust_IDColumn" msprop:Generator_UserColumnName="Cust_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
